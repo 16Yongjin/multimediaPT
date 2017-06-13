@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hufs.dev.yongjin.multimediapt.QuizActivity"
+    tools:showIn="@layout/activity_quiz">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/touch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kText"
+            android:layout_weight="0.5"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="화면을 터치해 주세요"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bText"
+            android:layout_weight="0.5"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="시청각 기말 단어"/>
+    </LinearLayout>
+
+</RelativeLayout>
